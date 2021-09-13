@@ -1,0 +1,77 @@
+[
+  {
+    "Data": {
+      "TransactionId": 1,
+      "ProductName": "Smartphone",
+      "Quantity": 2,
+      "Price": 100.0,
+      "Total": 200.0,
+      "Code": 222
+    },
+    "ID": 1,
+    "MachineNumber": 111,
+    "MachineCode": "ADB142"
+  },
+  {
+    "Data": {
+      "UserId": 1,
+      "Name": "User name",
+      "LastName": "Last name",
+      "PhoneNumber": 0,
+      "Code": 312
+    },
+    "ID": 2,
+    "MachineNumber": 4422,
+    "MachineCode": "412-D"
+  },
+  {
+    "Data": {
+      "Radius": 5.0,
+      "Pi": 3.141592653589793,
+      "Area": 78.53981633974483,
+      "Figure": 2,
+      "Code": 4123
+    },
+    "ID": 3,
+    "MachineNumber": 12,
+    "MachineCode": "5123"
+  },
+  {
+    "Data": {
+      "Base": 5.0,
+      "Height": 6.0,
+      "Area": 15.0,
+      "Figure": 3,
+      "Code": 9373
+    },
+    "ID": 4,
+    "MachineNumber": 653,
+    "MachineCode": "93765"
+  },
+  {
+    "Data": {
+      "Vehicle": 3,
+      "Brand": "Harley",
+      "Model": "Indian",
+      "WheelsNumber": 2,
+      "DoorsNumber": 0,
+      "Code": 956
+    },
+    "ID": 5,
+    "MachineNumber": 1124312311,
+    "MachineCode": "23423"
+  },
+  {
+    "Data": {
+      "Vehicle": 1,
+      "Brand": "Ford",
+      "Model": "Mustang",
+      "WheelsNumber": 4,
+      "DoorsNumber": 3,
+      "Code": 5234
+    },
+    "ID": 6,
+    "MachineNumber": 4234,
+    "MachineCode": "442263"
+  }
+]
