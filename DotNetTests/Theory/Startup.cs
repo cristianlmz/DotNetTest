@@ -28,8 +28,8 @@ namespace DotNetTests
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddSingleton<iMath, MathOperations>();
-            services.AddTransient<iMath, MathOperations>();
             services.AddScoped<iMath, MathOperations>();
+            services.AddTransient<iMath, MathOperations>();
             services.Configure<ProgramOptions>(Configuration.GetSection(nameof(ProgramOptions)));
             services.AddApiVersioning(config =>
             {

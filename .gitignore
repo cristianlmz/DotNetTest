@@ -28,3 +28,7 @@ DotNetTests/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Hosting.Abstractions.dl
 DotNetTests/bin/Debug/netcoreapp3.1/Microsoft.Extensions.FileProviders.Abstractions.dll
 DotNetTests/bin/Debug/netcoreapp3.1/Microsoft.Extensions.DependencyInjection.Abstractions.dll
 DotNetTests/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Configuration.Abstractions.dll
+.vs/DotNetTests/v16/.suo
+.vs/DotNetTests/v16/TestStore/0/000.testlog
+.vs/DotNetTests/v16/TestStore/0/testlog.manifest
+DotNetTests/bin/Debug/netcoreapp3.1/Newtonsoft.Json.dll
