@@ -39,8 +39,8 @@ namespace DotNetTests
         }
 
         /// <summary>
-        /// Type your full name in "yourName" variable.
-        /// Print how many times each letter appears in your name ordering them 
+        /// Write your full name in the variable "yourName".
+        /// Print how many times each letter of your name appears in descending order.
         /// </summary>
         void PrintYourName()
         {
@@ -48,7 +48,7 @@ namespace DotNetTests
         }
 
         /// <summary>
-        /// Find the matches between two lists.
+        /// Find the matches between these two lists.
         /// Print numbers divisible by 2 only.
         /// </summary>
         List<int> listA = new List<int>() { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
