@@ -22,6 +22,7 @@ namespace DotNetTests
         /// <summary>
         /// Create the folder C:/DotNetTests/
         /// Generate the same json structure than JsonTests.json and write it in C:/DotNetTests/.
+        /// Include all your models inside Models folder.
         /// </summary>
         void WriteJsonFile()
         {
@@ -31,6 +32,7 @@ namespace DotNetTests
         /// <summary>
         /// Make a async request to an api and show the result paginated by 10.
         /// Measure the process time.
+        /// Include all your models inside Models folder.
         /// </summary>
         /// <param name="pageNumber">Page number.</param>
         void RestApiCall(int pageNumber)
@@ -51,8 +53,8 @@ namespace DotNetTests
         /// Find the matches between these two lists.
         /// Print numbers divisible by 2 only.
         /// </summary>
-        List<int> listA = new List<int>() { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
-        List<int> listB = new List<int>() { 1, 3, 5, 6, 7, 9, 10 };
+        List<int> listA = new List<int>() { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 13 };
+        List<int> listB = new List<int>() { 1, 3, 5, 6, 7, 9, 10, 12, 13, 20 };
         void FindMatches()
         {
 

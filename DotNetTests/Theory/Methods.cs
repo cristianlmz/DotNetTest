@@ -18,9 +18,6 @@ namespace DotNetTests
                 case 3:
                     message = $"Number is {day}";
                     break;
-                case 4:
-                    message = string.Format("Number is {0}", day);
-                    break;
                 default:
                     break;
             }
@@ -34,19 +31,16 @@ namespace DotNetTests
                 1 => "Today is Monday",
                 2 => "Today is Tuesday",
                 3 => "Today is Wednesday",
-                _ => "Other day"
+                _ when day > 4 => "Other day",
+                _ => string.Empty
             };
         }
 
-        public int SelectValue(int number)
-        {
-            return number switch
-            {
-                _ when number > 10 => 5,
-                _ when number <= 10 => 17,
-                _ => 0
-            };
-        }
+        public Action<int> a = (number) => number++;
+
+        public Predicate<int> b = (number) => number % 2 == 0;
+
+        public Func<int, int, bool> c = (first, second) => first == second;
 
         public int AddNumbers(string first, string second)
         {
@@ -56,11 +50,5 @@ namespace DotNetTests
             int ValidateString(string number) => int.TryParse(number, out var value) ? AbsoluteValue(value) : 0;
             int AbsoluteValue(int number) => Math.Abs(number);
         }
-
-        public Action<int> a = (number) => number++;
-
-        public Predicate<int> b = (number) => number % 2 == 0;
-
-        public Func<int, int, bool> c = (first, second) => first == second;
     }
 }
