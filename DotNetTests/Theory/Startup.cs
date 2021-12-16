@@ -9,6 +9,9 @@ namespace DotNetTests
 {
     class Startup
     {
+
+        /// Describe line by line what this class does.
+
         public IConfiguration Configuration { get; set; }
 
         public IConfiguration LoadConfiguration()
@@ -27,9 +30,12 @@ namespace DotNetTests
 
         public void ConfigureServices(IServiceCollection services)
         {
+            ///What is the difference between Singleton, Scoped and Transient?
             services.AddSingleton<iMath, MathOperations>();
             services.AddScoped<iMath, MathOperations>();
             services.AddTransient<iMath, MathOperations>();
+
+
             services.Configure<ProgramOptions>(Configuration.GetSection(nameof(ProgramOptions)));
             services.AddApiVersioning(config =>
             {
@@ -44,9 +50,12 @@ namespace DotNetTests
                 app.UseDeveloperExceptionPage();
             }
 
+
             app.UseRouting();
             app.UseAuthentication();
             app.UseAuthorization();
+
+
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapHealthChecks("/health", new HealthCheckOptions
@@ -54,6 +63,8 @@ namespace DotNetTests
 
                 });
             });
+
+
             lifetime.ApplicationStopping.Register(() =>
             {
 

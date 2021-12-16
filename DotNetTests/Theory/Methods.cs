@@ -4,6 +4,7 @@ namespace DotNetTests
 {
     class Methods
     {
+        ///What is the difference between these two switches? Do they work differently?
         public string DisplayNumber(int day)
         {
             var message = "";
@@ -36,12 +37,16 @@ namespace DotNetTests
             };
         }
 
+
+
+        ///What is the difference between an Action, a Predicate and a Function?
         public Action<int> a = (number) => number++;
-
         public Predicate<int> b = (number) => number % 2 == 0;
-
         public Func<int, int, bool> c = (first, second) => first == second;
 
+
+
+        /// All the lines of this method are executed?
         public int AddNumbers(string first, string second)
         {
             int a = ValidateString(first);
